@@ -1,26 +1,26 @@
 html {
   font-size: 16px;
   line-height: 1.4;
-  color: #606060;
+  color: #283747;
   background-color: #F3F5F5;
-  font-family: 'Bungee', cursive;
+  font-family: 'Lora', serif;
 }
 
 h2 {
   font-size: 2rem;
   font-weight: 900;
-  color: #4c4c4c;
+  color: #283747;
 }
 
 h3 {
   font-size: 1.5rem;
   font-weight: 300;
-  color: #4c4c4c;
+  color: #283747;
 }
 
 a {
   text-decoration: none;
-  color: #4A90E2;
+  color: #283747;
 }
 
 main {
@@ -65,7 +65,7 @@ header {
 
 nav a {
   text-decoration: none;
-  color: #4A4A4A;
+  color: #283747;
 }
 
 .desktop ul {
@@ -120,7 +120,8 @@ nav a {
 .banner {
   display: flex;
   padding: 32px 24px;
-  background-color: #D8D8D8;
+  /*background-color: #F4D03F;*/
+  background-color: #F9E79F;
 }
 
 .banner .img-container {
@@ -142,7 +143,8 @@ nav a {
 }
 
 .register h2 {
-  font-weight: 900;
+  font-weight: 700;
+  font-size: 4rem;
 }
 
 .register h3 {
@@ -223,5 +225,190 @@ nav a {
   .button:hover {
     background-color: #7c7b7b;
     transition: background-color 100ms ease-in 25ms;
+  }
+}
+
+
+.courses {
+  padding: 32px 24px;
+  background-color: #D8D8D8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.courses h2 {
+  margin-bottom: 16px;
+}
+
+.courses h3 {
+  font-weight: 800;
+}
+
+.courses-gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.course-container {
+  width: 25%;
+  margin: 16px 16px;
+  background-color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .course-container {
+    width: 40%;
+  }
+}
+
+.course-header {
+  width: 100%;
+  /* height: 220px - Im not sure how this is supposed to work, but spec has this height set to 200px */
+}
+
+.course-header .image-container {
+  max-width: 100%;
+}
+
+.course-header .image-container img {
+  max-width: 100%;
+}
+
+.course-header h3 {
+  margin: 16px 16px 0 16px;
+}
+
+.course-header p {
+  text-transform: uppercase;
+  margin: 8px 16px;
+}
+
+.course-container > p {
+  margin: 0 16px 24px 16px;
+}
+
+@media only screen and (max-width: 480px) {
+  .course-header .image-container {
+    display: none;
+  }
+
+  .courses-gallery {
+    flex-flow: column nowrap;
+    padding-top: 16px;
+  }
+
+  .courses {
+    padding: 32px 16px 24px 16px;
+    background-color: #F3F5F5;
+  }
+
+  .course-container {
+    width: auto;
+    padding: 16px;
+    margin: 0;
+    margin-bottom: 8px;
+    background-color: #D8D8D8;
+  }
+
+  .course-header h3 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .course-container p {
+    display: none;
+  }
+}
+
+/* Thesis */
+.thesis-exhibit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 24px 32px 24px;
+}
+
+.exhibits {
+  margin-top: 32px;
+  display: flex;
+}
+
+.main-thesis {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  min-width: 60%;
+}
+
+.headline-container {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+
+
+.main-thesis h3 {
+  margin-bottom: 24px;
+}
+
+.thesis-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+
+.thesis {
+  max-width: 423px;
+  max-height: 168px;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+
+.thesis:hover {
+  background-color: #D8D8D8;
+  transition: background-color 400ms linear 50ms;
+}
+
+.thesis .img-container {
+  max-width: 35%;
+  min-width: 35%;
+  margin-right: 16px;
+}
+
+.thesis .img-container img {
+  width: 100%;
+}
+
+.thesis-desc h3 {
+  margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 640px) {
+  .thesis-container {
+    display: none;
+  }
+
+  .thesis-exhibit {
+    border-top: 1px solid #D8D8D8;
+    padding: 32px 0px;
+  }
+
+  .main-thesis {
+    width: 100%;
+  }
+
+  .main-thesis h3 {
+    display: none;
+  }
+
+  .main-thesis p {
+    display: none;
+  }
+
+  .video-container {
+    margin: 0;
   }
 }
